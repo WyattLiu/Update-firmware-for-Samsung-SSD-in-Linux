@@ -13,7 +13,7 @@ From my experience, I could not update with fwupdmgr facilities, to be fair, use
 The firmware is located here; https://semiconductor.samsung.com/consumer-storage/support/tools/
 
 Download the firmware:
-
+```
 `wget https://semiconductor.samsung.com/resources/software-resources/Samsung_SSD_980_PRO_5B2QGXA7.iso`
 
 `sudo mkdir /mnt/iso; chmod 777 -R /mnt/iso`
@@ -27,6 +27,7 @@ Download the firmware:
 `cd root/fumagician/`
 
 `sudo ./fumagician`
+```
 
 Don't run the fumagician.sh... it will run into issues.
 Samsung will ask if you backed up your drives which I always recommand doing it via rsync.
