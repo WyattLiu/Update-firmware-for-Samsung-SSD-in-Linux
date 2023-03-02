@@ -13,6 +13,7 @@ From my experience, I could not update with fwupdmgr facilities, to be fair, use
 The firmware is located here; https://semiconductor.samsung.com/consumer-storage/support/tools/
 
 Download the firmware:
+
 `wget https://semiconductor.samsung.com/resources/software-resources/Samsung_SSD_980_PRO_5B2QGXA7.iso`
 
 `sudo mkdir /mnt/iso; chmod 777 -R /mnt/iso`
