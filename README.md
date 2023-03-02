@@ -14,19 +14,13 @@ The firmware is located here; https://semiconductor.samsung.com/consumer-storage
 
 Download the firmware:
 ```
-`wget https://semiconductor.samsung.com/resources/software-resources/Samsung_SSD_980_PRO_5B2QGXA7.iso`
-
-`sudo mkdir /mnt/iso; chmod 777 -R /mnt/iso`
-
-`sudo mount -o loop ./Samsung_SSD_980_PRO_5B2QGXA7.iso /mnt/iso/`
-
-`mkdir ~/tmp_firmware; cd ~/tmp_firmware`
-
-`gzip -dc /mnt/iso/initrd | cpio -idv --no-absolute-filenames`
-
-`cd root/fumagician/`
-
-`sudo ./fumagician`
+wget https://semiconductor.samsung.com/resources/software-resources/Samsung_SSD_980_PRO_5B2QGXA7.iso
+sudo mkdir /mnt/iso; chmod 777 -R /mnt/iso
+sudo mount -o loop ./Samsung_SSD_980_PRO_5B2QGXA7.iso /mnt/iso/
+mkdir ~/tmp_firmware; cd ~/tmp_firmware
+gzip -dc /mnt/iso/initrd | cpio -idv --no-absolute-filenames
+cd root/fumagician/
+sudo ./fumagician
 ```
 
 Don't run the fumagician.sh... it will run into issues.
